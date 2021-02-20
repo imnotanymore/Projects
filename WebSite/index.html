@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Wyjątkowi Siemianowiczanie</title>
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2? family = Newsreader: wght @ 300 & display = swap" rel = "stylesheet">
+        <link rel="stylesheet" href="Styles.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="nav-bar">
+                <div class="left-side">
+                    <div class="nav-bar-wrapper">
+                        <a href="index.html">Strona Główna</a>
+                    </div>
+                    <div class="nav-bar-wrapper">
+                        <a href="O Projekcie.html">O Projekcie</a>
+                    </div>
+                    <div class="nav-bar-wrapper">
+                        <a href="https://muzeum.siemianowice.pl">Muzeum Miejskie w Siemianowicach</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="logo">
+                        <a href="https://muzeum.siemianowice.pl">
+                        <img src="Images/Logos/muzeum_siemianowice_logo.ico"></a>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="pictures-items-wrapper">
+
+                <a href="Page1.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/1.jpeg)"></div>
+      
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                 <img src="Images/Logos/Logobook.png" alt="">
+                                </div>  
+                                 <div class="subtitle">Marian Dziób</div>
+                            </div>
+                        </div>
+                </a>
+                <a href="Page2.html">
+                    <div class="pictures-item-wrapper">
+                  
+                        <div class="pictures-img-background" style="background-image:url(Images/2.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Włodzimierz Mszał</div>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="Page3.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/3.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Helena Zakręt</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Page4.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/4.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Karolina Mika</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Page5.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/5.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Józefa Bogdan</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Page6.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/6.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Marianna Buc</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Page7.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/7.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Na pewno nie Antoni Halor</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Page8.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/8.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Agnieszka Kuc</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Page9.html">
+                    <div class="pictures-item-wrapper">
+                        <div class="pictures-img-background" style="background-image:url(Images/9.jpeg)"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                <img src="Images/Logos/Logobook.png" alt="">
+                            </div>
+    
+                            <div class="subtitle">Barbara Jakaśtam</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+
+    <script>
+        const pictureItems = document.querySelectorAll('.pictures-item-wrapper');
+
+        pictureItems.forEach(pictureItem => {   
+            pictureItem.addEventListener('mouseover', () => {
+            console.log(pictureItem.childNodes[1].classList)
+            pictureItem.childNodes[1].classList.add('img-darken');
+         });
+
+            pictureItem.addEventListener('mouseout', () => {
+            console.log(pictureItem.childNodes[1].classList)
+            pictureItem.childNodes[1].classList.remove('img-darken');
+        });
+});
+    </script>
+
+</html>
