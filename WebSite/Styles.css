@@ -1,11 +1,11 @@
 body {
-    background-color: #353535;
+    background-color: #eaebed;
     font-family: "Newsreader", sans-serif;
     margin: 0px;
 }
 
 .container{
-    background-color: #284b63;
+    background-color: #006989;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -33,26 +33,26 @@ body {
 }
 
 .nav-bar-wrapper a {
-    color: #8a8a8a;
+    color: #a3bac3;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 .nav-bar-wrapper:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #eaebed;
 
 }
 
 .nav-bar-wrapper a:hover {
-    color: black;
+    color: #eaebed;
 }
 
 .active-nav-link{
-    border-bottom: 1px solid black
+    border-bottom: 1px solid #eaebed
 }
 
 .active-nav-link a{
-    color: black !important;
+    color: #eaebed !important;
 }
 
 
