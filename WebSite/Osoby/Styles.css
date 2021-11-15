@@ -142,7 +142,7 @@ body {
 }
 
 .nav-bar-wrapper-list:hover {
-    border-bottom: 0px solid #006989;
+    border-bottom: 1px solid #006989;
 
 }
 
@@ -150,13 +150,3 @@ body {
     color: #006989;
 }
 
-.list-items-wrapper{
-    display: list-item;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.logo-project-wrapper{
-    display: flex;
-    margin-left: 120px;
-    align-items: center;
-}
